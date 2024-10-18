@@ -334,5 +334,13 @@ app.put('/update-all-tarefas/:idUserTarefas/:idContainerTarefas', async (req, re
   }
 });
 
+// Retornar página html
+app.use(express.static(path.join(__dirname, '../frontend/dist')));
+app.get('*', (req, res) => {
+  const filePath = path.join(__dirname, '../frontend/dist');
+  res.sendFile(path.join(filePath, 'index.html'));
+});
+
+
 // Iniciar servidor
 app.listen(port, () => console.log('Servior ativo em: http://localhost:' + port));
