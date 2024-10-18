@@ -1,0 +1,13 @@
+{
+  "name": "wrave",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install-all": "npm install --prefix frontend && npm install --prefix backend",
+    "build": "npm run build --prefix frontend",
+    "start": "node backend/index.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
