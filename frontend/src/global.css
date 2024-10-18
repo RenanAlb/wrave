@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+body { overflow: hidden; }
+
+:root {
+  --color-tangerine-tango: #f06832;
+  --color-tangerine-tango-light: #ff7c47;
+  --color-charcoal: #0f0f0f;
+  --color-powder-blue: #aecacd;
+  --color-platinum: rgb(234, 233, 228);
+  --color-light-white: #f6f6f7;
+  --color-dark-disco: #211509;
+  --color-electro-blue: #7562d2;
+  --color-electro-blue-dark:  #5435d0;
+  --color-light-blue: #dde0ff;
+  --color-dancing-pants-orange: #ff6315;
+  --color-glow-stick-yellow: #E1F532;
+
+  --font-dm-serif-display: "DM Serif Display", serif;
+  --font-inter: "Inter", sans-serif;
+}
