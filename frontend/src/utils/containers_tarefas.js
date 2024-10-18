@@ -4,7 +4,7 @@
 // Criar categoria
 export const createContainer = async (nomeContainer, idUserContainer) => {
   try {
-    const response = await fetch('http://localhost:8080/criar-novo-container', {
+    const response = await fetch('https://wrave.onrender.com/criar-novo-container', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ nomeContainer, idUserContainer })
@@ -25,7 +25,7 @@ export const createContainer = async (nomeContainer, idUserContainer) => {
 // Buscar containers
 export const getContainers = async (id) => {
   try {
-    const response = await fetch(`http://localhost:8080/get-containers/${id}`);
+    const response = await fetch(`https://wrave.onrender.com/get-containers/${id}`);
     if (!response.ok) {
       throw new Error('Erro ao buscar os containers');
     }
@@ -41,7 +41,7 @@ export const getContainers = async (id) => {
 // Buscar container
 export const getContainer = async (id) => {
   try {
-    const response = await fetch(`http://localhost:8080/get-container/${id}`);
+    const response = await fetch(`https://wrave.onrender.com/get-container/${id}`);
     if (!response.ok) {
       throw new Error('Erro ao buscar o container');
     }
@@ -57,7 +57,7 @@ export const getContainer = async (id) => {
 // Excluir container
 export const excluirContainerById = async (containerId) => {
   try {
-    const response = await fetch(`http://localhost:8080/delete-container/${containerId}`, {
+    const response = await fetch(`https://wrave.onrender.com/delete-container/${containerId}`, {
       method: 'DELETE',
       headers: { 'Content-Type': 'application/json' }
     });

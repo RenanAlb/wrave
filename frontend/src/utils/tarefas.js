@@ -2,7 +2,7 @@
 
 export const createTarefa = async (idContainerTarefas, idUserTarefas, descricaoTarefas) => {
   try {
-    const response = await fetch('http://localhost:8080/criar-tarefa', {
+    const response = await fetch('https://wrave.onrender.com/criar-tarefa', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ idContainerTarefas, idUserTarefas, descricaoTarefas })
@@ -22,7 +22,7 @@ export const createTarefa = async (idContainerTarefas, idUserTarefas, descricaoT
 
 export const getTarefas = async (idContainerTarefas, idUserTarefas) => {
   try {
-    const response = await fetch(`http://localhost:8080/get-tarefas-user/${idContainerTarefas}/${idUserTarefas}`, {
+    const response = await fetch(`https://wrave.onrender.com/get-tarefas-user/${idContainerTarefas}/${idUserTarefas}`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -43,7 +43,7 @@ export const getTarefas = async (idContainerTarefas, idUserTarefas) => {
 
 export const deleteTarefa = async (idUserTarefas) => {
   try {
-    const response = await fetch(`http://localhost:8080/delete-tarefa/${idUserTarefas}`, {
+    const response = await fetch(`https://wrave.onrender.com/delete-tarefa/${idUserTarefas}`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',
@@ -64,7 +64,7 @@ export const deleteTarefa = async (idUserTarefas) => {
 
 export const checkTarefa = async (idUserTarefas) => {
   try {
-    const response = await fetch(`http://localhost:8080/check-tarefa/${idUserTarefas}`, {
+    const response = await fetch(`https://wrave.onrender.com/check-tarefa/${idUserTarefas}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
@@ -85,7 +85,7 @@ export const checkTarefa = async (idUserTarefas) => {
 
 export const deleteAllTarefas = async (idUserTarefas, idContainerTarefas) => {
   try {
-    const response = await fetch(`http://localhost:8080/delete-all-tarefas/${idUserTarefas}/${idContainerTarefas}`, {
+    const response = await fetch(`https://wrave.onrender.com/delete-all-tarefas/${idUserTarefas}/${idContainerTarefas}`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',
@@ -106,7 +106,7 @@ export const deleteAllTarefas = async (idUserTarefas, idContainerTarefas) => {
 
 export const updateAllTarefas = async (idUserTarefas, idContainerTarefas) => {
   try {
-    const response = await fetch(`http://localhost:8080/update-all-tarefas/${idUserTarefas}/${idContainerTarefas}`, {
+    const response = await fetch(`https://wrave.onrender.com/update-all-tarefas/${idUserTarefas}/${idContainerTarefas}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',

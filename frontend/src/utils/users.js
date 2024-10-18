@@ -2,7 +2,7 @@
 
 export const cadastro = async (nome, email, senha) => {
   try {
-    const response = await fetch('http://localhost:8080/cadastro', {
+    const response = await fetch('https://wrave.onrender.com/cadastro', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ nome, email, senha }),
@@ -23,7 +23,7 @@ export const cadastro = async (nome, email, senha) => {
 
 export const login = async (email, senha) => {
   try {
-    const response = await fetch('http://localhost:8080/login', {
+    const response = await fetch('https://wrave.onrender.com/login', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email, senha }),
@@ -45,7 +45,7 @@ export const login = async (email, senha) => {
 // GET dados user
 export const dadosUser = async () => {
   try {
-    const response = await fetch('http://localhost:8080/dados', {
+    const response = await fetch('https://wrave.onrender.com/dados', {
       method: 'GET',
       credentials: 'include'
     });
@@ -64,7 +64,7 @@ export const dadosUser = async () => {
 
 export const getStatusTarefas = async (user) => {
    try {
-    const response = await fetch('http://localhost:8080/get-status-tarefas', {
+    const response = await fetch('https://wrave.onrender.com/get-status-tarefas', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ user: user.id })
@@ -84,7 +84,7 @@ export const getStatusTarefas = async (user) => {
 
 export const logoutApp = async () => {
   try {
-    const response = await fetch('http://localhost:8080/logout', {
+    const response = await fetch('https://wrave.onrender.com/logout', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' }
     });
