@@ -4,6 +4,7 @@ const jwt = require('jsonwebtoken');
 const dotenv = require('dotenv');
 const bcriptjs = require('bcryptjs');
 const cookieParser = require('cookie-parser');
+const path = require('path');
 
 const connectToDataBase = require('./database/mongodb');
 
